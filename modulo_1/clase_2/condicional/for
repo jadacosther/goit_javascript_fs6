@@ -1,0 +1,26 @@
+let registrosUsuarios = [
+    {
+    "nombre": "Juan",
+    "Apellido": "Perez",
+    "Ciudad": "Mexico"
+    } ,
+    {
+    "nombre": "Maria",
+    "Apellido": "Perez",
+    "Ciudad": "Mexico"
+    } ,
+    {
+    "nombre": "German",
+    "Apellido": "Gomes",
+    "Ciudad": "Colombia"
+    }
+]
+let conteo;
+
+for(let registro of registrosUsuarios){
+     
+    if(registro.Ciudad == 'Mexico'){
+       conteo += 1
+     }
+}
+        
