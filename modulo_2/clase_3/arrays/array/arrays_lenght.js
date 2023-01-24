@@ -1,3 +1,3 @@
-const clients = ["Mango", "Poly", "Ajax"];
-console.log(clients.length); // 3
+let fruits = ["Apple", "Orange", "Plum"];
+console.log( fruits.length ); // 3
 

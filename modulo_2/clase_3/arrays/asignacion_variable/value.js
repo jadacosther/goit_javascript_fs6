@@ -5,8 +5,9 @@ let b = a;
 console.log(a); // 5
 console.log(b); // 5
 
-// Change the value of a
-a = 10;
-console.log(a); // 10
-// The value of b has not changed since it is a separate copy
-console.log(b); // 5
+let x = 5;
+let y = 10;
+let z = 25;
+
+x = y; // x is 10
+x = y = z; // x, y and z are all 25

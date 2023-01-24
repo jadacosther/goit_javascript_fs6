@@ -1,4 +1,3 @@
-const clients = ["Mango", "Poly", "Ajax"];
-clients[0] = "Kiwi";
-clients[1] = "Pango";
-console.log(clients); // ["Kiwi", "Pango", "Ajax"]
+let fruits = ["Apple", "Orange", "Plum"];
+fruits[2] = 'Pear'; // ahora ["Apple", "Orange", "Pear"]
+fruits[3] = 'Lemon'; // ahora ["Apple", "Orange", "Pear", "Lemon"]

@@ -6,3 +6,9 @@ console.log(clients[1]); // Poly
 console.log(clients[2]); // Ajax
 
 
+const fruits = ['🍎', '🍇', '🍑', '🍌', '🍋'];
+
+console.log(fruits[0]); // 🍎
+console.log(fruits[1]); // 🍇
+console.log(fruits[2]); // 🍑
+

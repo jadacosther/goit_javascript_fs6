@@ -17,3 +17,17 @@ console.log(b); // ["Mango", "Poly"]
 b.push("Ajax");
 console.log(a); // ["Mango", "Poly", "Ajax"]
 console.log(b); // ["Mango", "Poly", "Ajax"]
+
+
+// por que sucede esto al comparar dos arreglos?
+console.log(['a', 'b', 'c'] == ['a', 'b', 'c']) //false
+
+
+//clonar arrays
+  let clone = structuredClone(user);
+  
+  alert( user.sizes === clone.sizes ); // false, objetos diferentes
+  
+  // ahora user y clone están totalmente separados
+  user.sizes.width = 60;    // cambia una propiedad de un lugar
+  alert(clone.sizes.width); // 50, no están relacionados
