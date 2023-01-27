@@ -10,4 +10,8 @@
 var arr = [ 'a', 'b', 'Z', 'Aa', 'AA' ];
 arr.sort();  //[ 'AA', 'Aa', 'Z', 'a', 'b' ]
 
+const arr = [1,2,3]
+console.log(typeof arr)//object
+console.log(Array.isArray(arr))// true
+
 

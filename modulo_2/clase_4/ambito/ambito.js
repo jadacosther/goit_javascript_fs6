@@ -1,15 +1,15 @@
 function bar() {
     console.log("bar");
-  }
+}
   
-  function baz() {
-    console.log("baz");
-  }
+function baz() {
+  console.log("baz");
+}
   
-  function foo() {
-    console.log("foo");
-    bar();
-    baz();
-  }
+function foo() {
+  console.log("foo");
+  bar();
+  baz();
+}
   
-  foo();
+foo();
