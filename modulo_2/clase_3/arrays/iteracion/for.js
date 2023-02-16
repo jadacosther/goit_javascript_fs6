@@ -1,11 +1,18 @@
-const clients = ["Mango", "Ajax", "Poly"];
 
-for (const client of clients) {
-  console.log(client);
+const persona = {
+ name: "Juan",
+ apellido: "Alvarez",
+ edad: 26,
+ 
+ caminar: function(){
+     console.log("Juan está caminado")
+ }
+
 }
 
-const string = "javascript";
+console.log(persona.hasOwnProperty("documento"))
 
-for (const character of string) {
-  console.log(character);
-}
+persona['documento'] = 23445566433
+
+
+console.log(persona.hasOwnProperty("documento"))

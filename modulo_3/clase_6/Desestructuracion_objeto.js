@@ -4,19 +4,18 @@ const book = {
     genres: ["historical prose", "adventure"],
     isPublic: true,
     rating: 8.38,
+    coverImage: 'url://image.jpg'
+
   };
   
 
-  // Desestructuración anidada por propiedades
-  const accessType = book.isPublic ? "público" : "privado";
-  const message = `Libro ${book.title} autor ${book.author} con la valoración ${book.rating} se encuentra en ${accessType} acceso.`;
-
-  console.log(message)
 
 
   // Desestructuración objeto
-  const { title, author, isPublic, rating, coverImage } = book;
-  console.log(coverImage); // undefined
+  const { title, author, isPublic, rating, coverImage:imagem, longitud = title.length } = book;
+
+  imagem()
+  console.log(longitud); // undefined
 
 
 

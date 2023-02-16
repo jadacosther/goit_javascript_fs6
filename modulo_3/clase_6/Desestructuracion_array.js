@@ -1,11 +1,8 @@
-const rgb = [200, 255, 100];
-const [red, green, blue] = rgb;
+function makeMessage (name,price){
+return `You picked ${name}, price per item is ${price} credits`
+}
 
-console.log(`R:${red},G:${green},B:${blue}`); // "R:200,G:255,B:100"
-
-
-
-
-// const [, , blue] = rgb;
-
-// console.log(`Blue: ${blue}`); // "Blue: 255"
+console.log(makeMessage('Radar', 6150));
+console.log(makeMessage('Scanner',3500));
+console.log(makeMessage('Reactor',8000));
+console.log(makeMessage('Engine',4070));
