@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+</br>
+<input type="text" id="sonLas"/></br>
+<input type="text" id="temporizador"/></br>
+<input type="button" onclick="ActivarReloj()" id="botonActivar" value="Activar Reloj"/>
+<input type="button" onclick="DetenerReloj()" value="Detener Reloj"/>
+<body>
+    <script type="text/javascript">
+        function ActivarReloj(){
+            //Obteniendo datos del tiempo
+            var laHora = new Date();
+            var horario = laHora.getHours();
+            var minutero = laHora.getMinutes();
+            var segundero = laHora.getSeconds();
+      
+            if(minutero<10)
+                minutero = "0" + minutero;
+            if(segundero<10)
+                segundero = "0" + segundero;
+      
+            //escribiendo sobre el campo de texto la hora actual 
+            document.getElementById('sonLas').value = horario+":"+minutero+":"+segundero;
+            //Desactivando el boton 'Activar Reloj'
+            document.getElementById('botonActivar').disabled=true; 
+            //Actualizando la hora cada 1 segundo
+            ahoraSonLas = setTimeout(ActivarReloj,10000); 
+        } 
+      
+        function DetenerReloj(){
+            // Deteniendo el setTimeout
+            clearTimeout(ahoraSonLas);
+            // Volviendo el boton 'Activar Reloj' a la normalidad
+            document.getElementById('botonActivar').disabled=false;
+        }
+      </script>
+</body>
+</html>
+
+
+
+
+  
+  
